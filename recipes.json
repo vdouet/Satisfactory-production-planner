@@ -1,0 +1,58 @@
+{
+   "item":{
+      "normal":[
+        {
+            "name": "Iron ore",
+            "ingredients": {},
+            "building": "",
+            "production": 30
+         },
+         {
+            "name": "Iron ingot",
+            "ingredients": {"Iron ore": 30},
+            "building": "Smelter",
+            "production": 30
+         },
+         {
+            "name": "Iron plate",
+            "ingredients": {"Iron ingot": 30},
+            "building": "Constructor",
+            "production": 20
+         },
+         {
+            "name": "Iron rod",
+            "ingredients": {"Iron ingot": 15},
+            "building": "Constructor",
+            "production": 15
+         },
+         {
+            "name": "Screw",
+            "ingredients": {"Iron rod": 10},
+            "building": "Constructor",
+            "production": 40
+         },
+         {
+            "name": "Reinforced iron plate",
+            "ingredients": {"Iron plate": 6, "Screw": 60},
+            "building": "Assembler",
+            "production": 5
+         }
+      ],
+      "alternate":{
+         "color":"red",
+         "price":19.95
+      }
+   },
+   "buildings":[
+       {
+            "name": "Smelter",
+            "cost": {"Iron rod": 4, "Wire": 8},
+            "power": 4
+       },
+       {
+            "name": "Miner Mk.1",
+            "cost": {"Portable Miner": 1, "Iron plate": 10, "Concrete": 10},
+            "power": 5
+       }
+   ]
+}
