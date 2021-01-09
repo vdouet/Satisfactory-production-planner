@@ -2,6 +2,9 @@
 
 WIP: A production planner made for the Satisfactory game.
 
+
+## Description
+
 Just a little project I'm working on while progressing through the game. The recipes are stored in a JSON file and are easy to add or delete using the following syntax:   
 
 ```json
@@ -20,7 +23,17 @@ Once a recipe is given, the script travels through the JSON file to find the giv
 
 The script also calculates each building's operation rate. 100% for the normal operation rate or lower if the building needs to be downclock. If the operation rate is >100%, a new building of the same type is added.
 
-To-do:
+## Example of generated graph
+
+<p align="center">
+<img
+src="https://github.com/vdouet/Satisfactory-production-planner/blob/main/factory_plan.png"
+alt="Graph example" title="Graph example" />
+</p>
+
+
+
+## Todo
 + Add a GUI with PySide2.
 + Add all the recipes in `recipes.json`.
 + Replace Anytree by a better way to visualize graphs.
